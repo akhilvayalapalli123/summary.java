@@ -1,0 +1,24 @@
+public class SumArray {
+    
+    // Method to calculate the sum of an array
+    public static int sum(int[] numbers) {
+        int total = 0;
+        for (int number : numbers) {
+            total += number;
+        }
+        return total;
+    }
+
+    public static void main(String[] args) {
+        // Sample array
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Calculate the sum and print it
+        try {
+            int result = sum(numbers);
+            System.out.println("The sum is: " + result);
+        } catch (Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+    }
+}
